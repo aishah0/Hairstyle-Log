@@ -24,8 +24,7 @@ This project is of interest to me because I have observed that black hair servic
 - You can save the state of my application by clicking the button labelled "Hairstyle WishList", and then clicking the button labelled "Save wishlist".
 - You can reload the state of my application by clicking the button labelled "Hairstyle WishList", and then clicking the button labelled "Load wishlist".
 
-#### Phase 4: Task 2
-Event Log:  
+#### Event Log (Test Run):  
 Thu Nov 28 14:29:10 PST 2024  
 Hairstyle:locs added to completed list.  
 Thu Nov 28 14:29:11 PST 2024  
@@ -44,5 +43,5 @@ Thu Nov 28 14:29:51 PST 2024
 Application closed.
 
 
-#### Phase 4: Task 3
+#### Reflection
 I could make my project adhere better to the Single Responsibility Principle by reducing the responsibilities of my MainMenuPanel class. Currently, this class is responsible for both being the app's entry point and managing a key part of the GUI. A possible refactoring solution would be to separate the application initialization and event-handling from the GUI components. I could extract a dedicated controller class that would handle events, while the other GUI class would be responsible for rendering UI elements. Another possible refactoring change to improve my design would be using the Observer pattern to manage event logs. I could create a dedicated observer class to "watch" the application state and log events when they occur. Separating the logging functionality from my UI classes would make my code design more flexible and easier to extend.
